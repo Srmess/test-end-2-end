@@ -20,9 +20,7 @@ describe("exercises module 2", () => {
   it("should login with a different flow", () => {
     cy.get("a.header__message").click()
     cy.url().should("contain", "/login")
-    cy.get("input[name='email']").type("boynerd@outlook.com")
-    cy.get("input[name='password']").type("Senha12345")
-    cy.get("button[type='submit']").click()
+    cy.login({ email: "boynerd@outlook.com", password: "Senha12345" })
     cy.url().should("contain", "/home")
   })
 })

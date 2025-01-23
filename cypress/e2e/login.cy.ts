@@ -5,16 +5,12 @@ describe("login", () => {
   })
 
   it("should login correctly a user", () => {
-    cy.get("[data-test='input-loginEmail']").type("ana@email.com")
-    cy.get("[data-test='input-loginPassword']").type("Senha123")
-    cy.get("[data-test='submit-button']").click()
+    cy.login({ email: "ana@email.com", password: "Senha123" })
     cy.url().should("include", "/home")
   })
 
   it("should submit wrong format data", () => {
-    cy.get("[data-test='input-loginEmail']").type("wrongemail")
-    cy.get("[data-test='input-loginPassword']").type("wrongpassword")
-    cy.get("[data-test='submit-button']").click()
+    cy.login({ email: "wrongemail", password: "wrongpassword" })
     cy.contains("p.error", "Por favor, verifique o email digitado").should(
       "be.visible"
     )
