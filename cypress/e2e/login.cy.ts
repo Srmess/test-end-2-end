@@ -9,6 +9,17 @@ describe("login", () => {
     cy.url().should("include", "/home")
   })
 
+  it("should submit wrong password", () => {
+    cy.intercept(
+      "POST",
+      "https://adopet-api-i8qu.onrender.com/adotante/login",
+      { statusCode: 404 }
+    ).as("stubPost")
+    cy.login({ email: "ana@email.com", password: "Senha123" })
+    cy.wait("@stubPost")
+    cy.contains("p", "Falha no login")
+  })
+
   it("should submit wrong format data", () => {
     cy.login({ email: "wrongemail", password: "wrongpassword" })
     cy.contains("p.error", "Por favor, verifique o email digitado").should(

@@ -1,0 +1,163 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 4,
+    "passes": 4,
+    "pending": 0,
+    "failures": 0,
+    "start": "2025-01-23T22:54:55.638Z",
+    "end": "2025-01-23T22:54:58.716Z",
+    "duration": 3078,
+    "testsRegistered": 4,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "5ec37143-3603-4bcf-8faa-9560a3007f5c",
+      "title": "",
+      "fullFile": "cypress\\e2e\\visit.cy.ts",
+      "file": "cypress\\e2e\\visit.cy.ts",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "b7e3e7d9-2442-46d2-acfa-601ca328a160",
+          "title": "visitations",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "should click button 'Ver pets disponíveis para adoção'",
+              "fullTitle": "visitations should click button 'Ver pets disponíveis para adoção'",
+              "timedOut": null,
+              "duration": 1198,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit(\"https://adopet-frontend-cypress.vercel.app/\"),\n    cy.contains(\"a\", \"Ver pets disponíveis para adoção\").click();",
+              "err": {},
+              "uuid": "ac194619-a372-4f75-84eb-2c9c90b3f59a",
+              "parentUUID": "b7e3e7d9-2442-46d2-acfa-601ca328a160",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "should click header buttons",
+              "fullTitle": "visitations should click header buttons",
+              "timedOut": null,
+              "duration": 297,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit(\"https://adopet-frontend-cypress.vercel.app/\"),\n    cy.get(\"a[aria-label='Tela inicial']\").click();\ncy.url().should(\"contain\", \"/\");\ncy.get(\"a[aria-label='Ir para Mensagens']\").click();\ncy.url().should(\"contain\", \"/login\");",
+              "err": {},
+              "uuid": "36ef58ff-f624-41fa-b58d-bdf9b55c5e90",
+              "parentUUID": "b7e3e7d9-2442-46d2-acfa-601ca328a160",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "should visit /login",
+              "fullTitle": "visitations should visit /login",
+              "timedOut": null,
+              "duration": 123,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit(\"https://adopet-frontend-cypress.vercel.app/login\"),\n    cy.contains(\"p\", \"Já tem conta? Faça seu login\");",
+              "err": {},
+              "uuid": "b71de1c2-48f6-40bc-9a09-252e8cd9f57a",
+              "parentUUID": "b7e3e7d9-2442-46d2-acfa-601ca328a160",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "should visit /home",
+              "fullTitle": "visitations should visit /home",
+              "timedOut": null,
+              "duration": 419,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit(\"https://adopet-frontend-cypress.vercel.app/home\"),\n    cy.contains(\"p\", \"Olá! Veja os amigos disponíveis para adoção!\");\ncy.get(\".header__message\").click();",
+              "err": {},
+              "uuid": "13e46d01-4169-4bf5-b19c-905a97f8ff03",
+              "parentUUID": "b7e3e7d9-2442-46d2-acfa-601ca328a160",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "ac194619-a372-4f75-84eb-2c9c90b3f59a",
+            "36ef58ff-f624-41fa-b58d-bdf9b55c5e90",
+            "b71de1c2-48f6-40bc-9a09-252e8cd9f57a",
+            "13e46d01-4169-4bf5-b19c-905a97f8ff03"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 2037,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/results",
+        "overwrite": false,
+        "html": true,
+        "json": true,
+        "timestamp": "mmddyyyy_HHMMss"
+      },
+      "version": "6.2.0"
+    }
+  }
+}

@@ -13,7 +13,7 @@ module.exports = defineConfig({
       reportDir: "cypress/results",
       overwrite: false,
       html: true,
-      json: false,
+      json: true,
       timestamp: "mmddyyyy_HHMMss",
     },
   },

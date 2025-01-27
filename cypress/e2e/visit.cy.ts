@@ -23,5 +23,3 @@ describe("visitations", () => {
     cy.get(".header__message").click()
   })
 })
-
-// Teste o login com um fluxo diferente: Visite a página principal do Adopet, clique no botão de ícone de mensagem no header e escreva nome e senha válidos na página de login.
