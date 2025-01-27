@@ -24,10 +24,10 @@ Cypress.Commands.add("login", ({ email, password }) => {
 })
 
 Cypress.Commands.add("signUp", ({ name, email, password, confirmPasword }) => {
-  cy.get("input[name='nome']").type(name)
-  cy.get("input[name='email']").type(email)
-  cy.get("input[name='password']").type(password)
-  cy.get("input[name='confirm_password']").type(confirmPasword)
+  cy.get("input[name='nome']").clear().type(name)
+  cy.get("input[name='email']").clear().type(email)
+  cy.get("input[name='password']").clear().type(password)
+  cy.get("input[name='confirm_password']").clear().type(confirmPasword)
   cy.get('button[type="submit"]').click()
 })
 

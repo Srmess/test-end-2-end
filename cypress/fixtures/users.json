@@ -1,0 +1,64 @@
+{
+  "users": [
+    {
+      "name": "Groot",
+      "email": "eusou@groot.com",
+      "password": "Eusougropot123",
+      "confirmPasword": "Eusougropot123"
+    },
+    {
+      "name": "Rocket",
+      "email": "rocket@guardians.com",
+      "password": "RocketRaccoon123",
+      "confirmPasword": "RocketRaccoon123"
+    },
+    {
+      "name": "Star-Lord",
+      "email": "starlord@guardians.com",
+      "password": "StarLord123",
+      "confirmPasword": "StarLord123"
+    },
+    {
+      "name": "Gamora",
+      "email": "gamora@guardians.com",
+      "password": "Gamora123",
+      "confirmPasword": "Gamora123"
+    },
+    {
+      "name": "Drax",
+      "email": "drax@guardians.com",
+      "password": "Drax123",
+      "confirmPasword": "Drax123"
+    },
+    {
+      "name": "Nebula",
+      "email": "nebula@guardians.com",
+      "password": "Nebula123",
+      "confirmPasword": "Nebula123"
+    },
+    {
+      "name": "Mantis",
+      "email": "mantis@guardians.com",
+      "password": "Mantis123",
+      "confirmPasword": "Mantis123"
+    },
+    {
+      "name": "Yondu",
+      "email": "yondu@ravagers.com",
+      "password": "Yondu123",
+      "confirmPasword": "Yondu123"
+    },
+    {
+      "name": "Kraglin",
+      "email": "kraglin@ravagers.com",
+      "password": "Kraglin123",
+      "confirmPasword": "Kraglin123"
+    },
+    {
+      "name": "Cosmo",
+      "email": "cosmo@guardians.com",
+      "password": "Cosmo123",
+      "confirmPasword": "Cosmo123"
+    }
+  ]
+}
